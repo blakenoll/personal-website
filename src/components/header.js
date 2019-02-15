@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Header = ({ siteTitle, className}) => (
+const Header = ({ siteTitle, className }) => (
   <div className={className}>
     <div className="flex-row">
       <h1 style={{ margin: 0, zIndex: 1 }}>
@@ -21,8 +21,9 @@ const Header = ({ siteTitle, className}) => (
 )
 
 const StyledHeader = styled(Header)`
-  background: rgba(0, 0, 0, .48);
-  box-shadow: 0 1px 4px rgba(0,0,0,.16);
+  background: linear-gradient(to top left, #5b86e5, #36d1dc);
+  box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
+    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 transparent;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -42,7 +43,7 @@ const StyledHeader = styled(Header)`
     flex-direction: row;
     margin: 0 auto;
     max-width: 960px;
-    padding: .5rem 1.0875rem;
+    padding: 0.5rem 1.0875rem;
     h1 {
       font-size: 1.5rem;
     }

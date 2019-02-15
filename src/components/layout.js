@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <StyledHeader siteTitle={data.site.siteMetadata.title} />
-          {children}
+        {children}
       </>
     )}
   />

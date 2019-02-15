@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Container } from './styles'
 import styled from 'styled-components'
 
 class TextForm extends React.Component {
@@ -7,14 +7,14 @@ class TextForm extends React.Component {
     super(props)
     this.state = {
       number: '',
-      message: ''
+      message: '',
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(e) {
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   handleSubmit(e) {
@@ -22,29 +22,41 @@ class TextForm extends React.Component {
     if (!this.state.message.length) {
       return
     }
-    const url = `https://cwp7tpybl7.execute-api.us-west-2.amazonaws.com/default/textFromTwillio?to=${this.state.number}&body=${this.state.message}`
+    const url = `https://cwp7tpybl7.execute-api.us-west-2.amazonaws.com/default/textFromTwillio?to=${
+      this.state.number
+    }&body=${this.state.message}`
     console.log(url)
-    fetch(url, { method: "POST"}).then(
-      res => res.json()
-    )
-    this.setState({number: '', message: ''})
+    fetch(url, { method: 'POST' }).then(res => res.json())
+    this.setState({ number: '', message: '' })
   }
 
   render() {
-    return(
+    return (
       <div className={this.props.className}>
-        <h2>Send a text</h2>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="number">Enter Phone number</label>
-          <input id="number" onChange={this.handleChange} value={this.state.number} name="number" type="number"/>
-          <label htmlFor="message">Message</label>
-          <textarea id="message" onChange={this.handleChange} value={this.state.message} name="message"/>
-          <button>Send</button>
-        </form>
+        <Container>
+          <h2>Send a text</h2>
+          <form onSubmit={this.handleSubmit}>
+            <label htmlFor="number">Enter Phone number</label>
+            <input
+              id="number"
+              onChange={this.handleChange}
+              value={this.state.number}
+              name="number"
+              type="number"
+            />
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              onChange={this.handleChange}
+              value={this.state.message}
+              name="message"
+            />
+            <button>Send</button>
+          </form>
+        </Container>
       </div>
     )
   }
-
 }
 
 const StyledForm = styled(TextForm)`
