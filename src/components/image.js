@@ -13,7 +13,7 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = ({image}) => (
+const Image = ({ image }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -26,7 +26,16 @@ const Image = ({image}) => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} style={{borderRadius: '50%'}}/>}
+    render={data => (
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        style={{
+          borderRadius: '50%',
+          boxShadow:
+            '0 7px 14px -3px rgba(45,35,66,0.3), 0 2px 4px 0 rgba(45,35,66,0.4), inset -1px -1px 0 0 rgba(0,0,0,0.1)',
+        }}
+      />
+    )}
   />
 )
 export default Image

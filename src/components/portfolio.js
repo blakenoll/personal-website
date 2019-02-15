@@ -55,10 +55,14 @@ class Portfolio extends React.Component {
 }
 
 const StyledPortfolio = styled(Portfolio)`
-  background: linear-gradient(to top left, #5b86e5 30%, #36d1dc);
-  padding: 2rem 0;
+  background: linear-gradient(
+    310deg,
+    var(--jet) 30%,
+    var(--united-nations-blue)
+  );
+  padding: 3rem 0;
   h1 {
-    color: #fff;
+    color: var(--white);
     font-weight: 200;
     letter-spacing: 1px;
     text-align: center;

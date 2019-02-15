@@ -3,6 +3,13 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const Globalstyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
+  :root {
+    --jet: #303036;
+    --white: #fffaff;
+    --picton-blue: #30bced;
+    --united-nations-blue: #5b86e5;
+    --medium-turquoise: #36d1dc;
+  }
   * {
     box-sizing: border-box;
   }
@@ -15,8 +22,8 @@ export const Title = styled.h1`
 `
 
 export const Wrapper = styled.section`
-  padding: 6rem 0rem;
-  background: #fff;
+  padding: 3rem 0rem;
+  background: #fffaff;
   color: dodgerblue;
   position: relative;
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
@@ -26,7 +33,7 @@ export const Wrapper = styled.section`
     position: absolute;
     top: -50px;
     right: 0;
-    border-bottom: 80px solid #fff;
+    border-bottom: 80px solid #fffaff;
     border-left: 80px solid transparent;
     width: 35%;
   }
@@ -39,7 +46,7 @@ export const Wrapper = styled.section`
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 0px 1rem 1rem 1rem;
   padding-top: 0;
 `
 export const Row = styled.div`
@@ -82,19 +89,24 @@ export const HeroImage = styled.div`
 `
 
 export const Button = styled.a`
-  background: ${props => (props.bgcolor ? props.bgcolor : 'dodgerblue')};
+  background: linear-gradient(to top left, #5b86e5, #36d1dc);
   color: ${props => (props.color ? props.color : 'white')};
   font-size: 1rem;
   font-weight: 500;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 0px 20px 20px;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 50px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
+    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset -1px -1px 0 0 #5b86e5;
   transition: background 0.5s;
 
+  &:first-child {
+    margin: 20px 0;
+  }
+
   &:hover {
-    background: rgba(30, 144, 255, 0.8);
+    background: linear-gradient(to top left, #5b86e5 50%, #36d1dc);
   }
 `
 
@@ -105,13 +117,19 @@ export const SocialButton = styled.a`
   i {
     display: inline-block;
     border-radius: 60px;
-    box-shadow: 0px 0px 2px #888;
+    box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
+      0 2px 4px 0 rgba(45, 35, 66, 0.4), inset -1px -1px 0 0 #5b86e5;
     padding: 0.5em 0.6em;
     font-size: 1.5rem;
     background: linear-gradient(to top left, #5b86e5, #36d1dc);
     color: ${props => (props.color ? props.color : 'white')};
+
     &:hover {
       background: linear-gradient(to top left, #5b86e5 50%, #36d1dc);
     }
+  }
+
+  &:last-child {
+    margin: 20px 0;
   }
 `
