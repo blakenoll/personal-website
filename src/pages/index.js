@@ -60,7 +60,7 @@ const IndexPage = () => (
                 width: '300px',
               }}
             >
-              <Image image="gatsby-astronaut.png" />
+              <Image />
             </div>
           </Row>
         </Row>

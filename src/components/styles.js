@@ -31,10 +31,10 @@ export const Wrapper = styled.section`
   &::before {
     content: '';
     position: absolute;
-    top: -50px;
+    top: -40px;
     right: 0;
-    border-bottom: 80px solid #fffaff;
-    border-left: 80px solid transparent;
+    border-bottom: 40px solid #fffaff;
+    border-left: 40px solid transparent;
     width: 35%;
   }
 
