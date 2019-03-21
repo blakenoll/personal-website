@@ -7,26 +7,38 @@ const websites = [
   {
     image: 'https://blakenoll.com/img/masters.png',
     title: 'masters.edu',
+    tech: ['jekyll'],
+    link: 'https://masters.edu',
   },
   {
     image: 'https://blakenoll.com/img/gottabudget.png',
     title: 'Gotta Budget',
+    tech: ['rails', 'postgres', 'heroku'],
+    link: 'https://vast-badlands-32950.herokuapp.com/',
   },
   {
     image: 'https://blakenoll.com/img/collegesearch.png',
     title: 'College Search',
+    tech: ['react', 'graphql', 'heroku', 'aws'],
+    link: 'http://college-search-front-end.s3-website-us-west-2.amazonaws.com/',
   },
   {
     image: 'https://blakenoll.com/img/wekreative.jpeg',
     title: 'Wekreative',
+    tech: ['jekyll'],
+    link: 'https://wekreative.com/',
   },
   {
     image: 'https://blakenoll.com/img/gottabudget.png',
     title: 'Lux Solutions',
+    tech: ['react', 'gatsby'],
+    link: 'https://luxsolutions.com/',
   },
   {
     image: 'https://blakenoll.com/img/gottabudget.png',
     title: 'The Pour Choice',
+    tech: ['jekyll'],
+    link: 'http://thepourchoice.com/',
   },
 ]
 
