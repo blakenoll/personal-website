@@ -85,7 +85,7 @@ export const HeroImage = styled.div`
       top center scroll;
   background-size: cover;
   padding: 6rem 0 0rem;
-  color: white;
+  color: var(--white);
 `
 
 export const Button = styled.a`

@@ -27,7 +27,10 @@ const StyledCard = styled(Card)`
   background: var(--white);
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
     0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #cfd1e3;
-
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.09);
+  }
   .card-body {
     padding: 5px 10px;
     h3 {
@@ -41,8 +44,10 @@ const StyledCard = styled(Card)`
       a {
         color: var(--white);
         text-decoration: none;
+        text-align: center;
         background: var(--united-nations-blue);
-        padding: 5px 10px;
+        padding: 5px 15px;
+        margin-bottom: 15px;
         border-radius: 20px;
         box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
           0 2px 4px 0 rgba(45, 35, 66, 0.4), inset -1px -1px 0 0 #5b86e5;
