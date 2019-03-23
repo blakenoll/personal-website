@@ -16,8 +16,8 @@ const Svg = () => (
         y2="55.602%"
         id="a"
       >
-        <stop stop-color="#919191" offset="0%" />
-        <stop stop-color="#FFF" offset="100%" />
+        <stop stopColor="#919191" offset="0%" />
+        <stop stopColor="#FFF" offset="100%" />
       </linearGradient>
       <linearGradient
         x1="26.427%"
@@ -26,13 +26,13 @@ const Svg = () => (
         y2="51.906%"
         id="b"
       >
-        <stop stop-color="#900" offset="0%" />
-        <stop stop-color="#E80000" offset="100%" />
+        <stop stopColor="#900" offset="0%" />
+        <stop stopColor="#E80000" offset="100%" />
       </linearGradient>
       <linearGradient x1="50%" y1="99.822%" x2="50%" y2="-.044%" id="c">
-        <stop stop-color="#1A1A1A" offset="0%" />
-        <stop stop-color="#4A4A4C" offset="40.26%" />
-        <stop stop-color="#333" offset="100%" />
+        <stop stopColor="#1A1A1A" offset="0%" />
+        <stop stopColor="#4A4A4C" offset="40.26%" />
+        <stop stopColor="#333" offset="100%" />
       </linearGradient>
     </defs>
     <path

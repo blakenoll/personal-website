@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import {
   Globalstyle,
   Wrapper,
@@ -36,19 +35,18 @@ const IndexPage = () => (
               <small>Located in Los Angeles</small>
             </h1>
             <p>
-              Currently working at The Master's University just north of LA as
-              the web content strategist. In charge of changing website design
-              and content to reflect our change to university status. I have
-              experience in HTML, Javascript, CSS, PHP, MySQL, Node.js, Ruby,
-              Rails, Java, algorithum efficiency, and computer architecture.
+              With a record of helping teams identify needs, solve problems and
+              contribute to an end goal, I desire to take the skill set I have
+              developed working in higher education and apply it to something
+              that shapes the future.
             </p>
-            <SocialButton href="#" bgcolor="dodgerblue">
+            <SocialButton href="https://github.com/blakenoll">
               <i className="fa fa-github" />
             </SocialButton>
-            <SocialButton href="#" bgcolor="dodgerblue">
+            <SocialButton href="https://www.linkedin.com/in/blake-noll">
               <i className="fa fa-linkedin" />
             </SocialButton>
-            <SocialButton href="#" bgcolor="dodgerblue">
+            <SocialButton href="mailto:nollblake@gmail.com">
               <i className="fa fa-envelope-square" />
             </SocialButton>
           </Column>

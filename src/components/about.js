@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Button } from './styles'
+import resume from '../pdfs/NollBlakeResume.pdf'
 
 const About = ({ className }) => (
   <div className={className}>
     <Container>
       <h1>About</h1>
       <p>
-        Currently working at The Master's University just north of LA as the web
-        content strategist. In charge of changing website design and content to
-        reflect our change to university status. I have experience in HTML,
-        Javascript, CSS, PHP, MySQL, Node.js, Ruby, Rails, Java, algorithum
-        efficiency, and computer architecture.
+        Currently working at The Master's University just north of LA as the Web
+        Content Strategist. In charge of developing and maintaining all web
+        content for the University. I have experience in Javascript (React,
+        Node, ES6 and above), HTML/CSS, SQL, MongoDB, Rails, Git and course work
+        in Java.
       </p>
       <p className="center">
-        <Button href="#">Resume</Button>
+        <Button href={resume}>Résumé</Button>
       </p>
     </Container>
   </div>

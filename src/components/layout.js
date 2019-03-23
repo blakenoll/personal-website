@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
-import StyledHeader from './header'
+import Navbar from './navbar/header'
 import 'font-awesome/css/font-awesome.min.css'
 import './layout.css'
 
@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <StyledHeader siteTitle={data.site.siteMetadata.title} />
+        <Navbar siteTitle={data.site.siteMetadata.title} />
         {children}
         <Footer />
       </>

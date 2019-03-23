@@ -1,24 +1,26 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import MobileMenu from './mobileMenu'
 
-const Header = ({ siteTitle, className }) => (
+const Navbar = ({ siteTitle, className }) => (
   <div className={className}>
     <div className="flex-row">
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
+      <MobileMenu />
     </div>
   </div>
 )
 
-const StyledHeader = styled(Header)`
+const StyledNavbar = styled(Navbar)`
   background: var(--jet);
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
     0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 200;
 
   &::before {
     content: '';
@@ -33,6 +35,7 @@ const StyledHeader = styled(Header)`
   .flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 960px;
     padding: 0.5rem 1.0875rem;
@@ -55,4 +58,4 @@ const StyledHeader = styled(Header)`
   }
 `
 
-export default StyledHeader
+export default StyledNavbar

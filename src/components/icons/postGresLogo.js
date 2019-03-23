@@ -20,9 +20,9 @@ const Svg = () => (
     />
     <path
       stroke="#fff"
-      stroke-width="3"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       d="M13.924 17.211"
       fill="none"
     />

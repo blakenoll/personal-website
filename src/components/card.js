@@ -5,7 +5,7 @@ import Icon from './icons'
 const Card = ({ item, className }) => {
   return (
     <div className={className}>
-      <img src={item.image} />
+      <img src={item.image} alt={item.title} />
       <div className="card-body">
         <h3>{item.title}</h3>
         <p>
