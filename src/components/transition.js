@@ -6,7 +6,6 @@ const TransitionComp = ({ children }) => {
   const defaultStyle = {
     transition: `opacity ${duration}ms ease-out`,
     opacity: '.8',
-    marginTop: '47px',
   }
 
   const transitionStyles = {
