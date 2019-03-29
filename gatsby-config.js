@@ -26,6 +26,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-page-transitions',
     'gatsby-plugin-styled-components',
   ],
 }

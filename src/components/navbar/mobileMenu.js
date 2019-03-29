@@ -5,6 +5,10 @@ import { Link } from 'gatsby'
 
 const listItems = [
   {
+    title: 'Home',
+    link: '/',
+  },
+  {
     title: 'About',
     link: '/about',
   },
@@ -105,6 +109,7 @@ const StyledMobileMenu = styled(MobileMenu)`
   }
   ${'' /* make menu visible and turn menu icon into an X */}
   &.show {
+    transition: right 0.3s;
     .mobile-side-menu {
       right: 10vw;
     }

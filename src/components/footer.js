@@ -6,13 +6,16 @@ const Footer = ({ className }) => (
   <footer className={className}>
     <Container>
       <h1>Contact Info</h1>
-      <SocialButton href="https://github.com/blakenoll">
+      <SocialButton href="https://github.com/blakenoll" alt="github">
         <i className="fa fa-github" />
       </SocialButton>
-      <SocialButton href="https://www.linkedin.com/in/blake-noll">
+      <SocialButton
+        href="https://www.linkedin.com/in/blake-noll"
+        alt="linkedin"
+      >
         <i className="fa fa-linkedin" />
       </SocialButton>
-      <SocialButton href="mailto:nollblake@gmail.com">
+      <SocialButton href="mailto:nollblake@gmail.com" alt="email">
         <i className="fa fa-envelope-square" />
       </SocialButton>
     </Container>
