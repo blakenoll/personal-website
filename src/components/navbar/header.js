@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import MobileMenu from './mobileMenu'
+import NavLinks from './navLinks'
 
 const Navbar = ({ siteTitle, className }) => (
   <div className={className}>
@@ -9,6 +10,7 @@ const Navbar = ({ siteTitle, className }) => (
       <h1>
         <Link to="/">{siteTitle}</Link>
       </h1>
+      <NavLinks />
       <MobileMenu />
     </div>
   </div>
@@ -27,7 +29,7 @@ const StyledNavbar = styled(Navbar)`
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 47px solid #fffaff;
+    border-top: 47px solid var(--white);
     border-right: 47px solid transparent;
     width: 40%;
   }
@@ -45,7 +47,7 @@ const StyledNavbar = styled(Navbar)`
       z-index: 1;
       color: ;
       a {
-        color: var(--picton-blue);
+        color: var(--jet);
         text-decoration: none;
       }
     }

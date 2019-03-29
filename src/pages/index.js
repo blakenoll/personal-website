@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Globalstyle,
   Wrapper,
   Container,
   Row,
@@ -15,7 +14,6 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <Globalstyle />
     <HeroImage>
       <Container>
         <Row mobile>
@@ -50,7 +48,7 @@ const IndexPage = () => (
               <i className="fa fa-envelope-square" />
             </SocialButton>
           </Column>
-          <Row flex="1" margin="0px 30px 0px 0px" justifyContent="center">
+          {/* <Row flex="1" margin="0px 30px 0px 0px" justifyContent="center">
             <div
               style={{
                 maxWidth: '300px',
@@ -60,14 +58,14 @@ const IndexPage = () => (
             >
               <Image />
             </div>
-          </Row>
+          </Row> */}
         </Row>
       </Container>
     </HeroImage>
-    <Wrapper>
+    {/* <Wrapper>
       <About />
     </Wrapper>
-    <Portfolio />
+    <Portfolio /> */}
   </Layout>
 )
 

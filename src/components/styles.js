@@ -74,7 +74,7 @@ export const Column = styled.div`
 `
 
 export const HeroImage = styled.div`
-  height: auto;
+  min-height: 100vh;
   background: linear-gradient(
       45deg,
       rgba(30, 144, 255, 0.4),
@@ -83,7 +83,9 @@ export const HeroImage = styled.div`
     url(https://blakenoll.com/img/michael-olsen-411871-unsplash.jpg) no-repeat
       top center scroll;
   background-size: cover;
-  padding: 6rem 0 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--white);
 `
 

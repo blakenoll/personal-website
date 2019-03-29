@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import StyledMobileDropdown from './mobileDropdown'
+import { Link } from 'gatsby'
 
 const listItems = [
   {
     title: 'About',
-    link: 'https://www.masters.edu/about',
+    link: '/about',
   },
   {
     title: 'Portfolio',
-    link: 'https://www.masters.edu/about',
+    link: '/portfolio',
   },
   {
     title: 'Contact',
-    link: 'https://www.masters.edu/financial-aid',
+    link: '/contact',
   },
 ]
 
@@ -49,7 +50,7 @@ const MobileMenu = ({ className }) => {
             } else {
               return (
                 <li key={index + 'z'}>
-                  <a href={item.link}>{item.title}</a>
+                  <Link to={item.link}>{item.title}</Link>
                 </li>
               )
             }
@@ -76,7 +77,7 @@ const StyledMobileMenu = styled(MobileMenu)`
     position: fixed;
     overflow-y: auto;
     overflow-x: auto;
-    background: #fff;
+    background: var(--white);
     display: none;
     height: auto;
     width: 80vw;
