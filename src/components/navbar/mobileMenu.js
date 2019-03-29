@@ -92,7 +92,7 @@ const StyledMobileMenu = styled(MobileMenu)`
       0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #cfd1e3;
     top: 60px;
     right: -100vw;
-    transition: right 0.3s;
+    transition: right 0.2s ease-out;
 
     ul {
       list-style: none;
@@ -109,9 +109,9 @@ const StyledMobileMenu = styled(MobileMenu)`
   }
   ${'' /* make menu visible and turn menu icon into an X */}
   &.show {
-    transition: right 0.3s;
     .mobile-side-menu {
       right: 10vw;
+      transition: right 0.25s ease-in;
     }
     .bar:first-child {
       transform: translateY(6px) rotate(45deg);

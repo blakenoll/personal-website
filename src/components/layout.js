@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Globalstyle />
         <Navbar siteTitle={data.site.siteMetadata.title} />
-        <Transition>{children}</Transition>
+        <Transition style={{ marginTop: '50px' }}>{children}</Transition>
         <Footer />
       </>
     )}

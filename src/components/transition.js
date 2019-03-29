@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
 
 const TransitionComp = ({ children }) => {
-  const duration = 100
+  const duration = 200
   const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: '.5',
+    transition: `opacity ${duration}ms ease-out`,
+    opacity: '.8',
+    marginTop: '47px',
   }
 
   const transitionStyles = {
-    entering: { opacity: '.5' },
+    entering: { opacity: '.8' },
     entered: { opacity: '1' },
   }
   const [inProp, setinProp] = useState(false)
