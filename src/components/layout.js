@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
 import Navbar from './navbar/header'
-import PageTransition from 'gatsby-plugin-page-transitions'
+import Transition from './transition'
 import { Globalstyle } from './styles'
 import 'font-awesome/css/font-awesome.min.css'
 import './layout.css'
@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Globalstyle />
         <Navbar siteTitle={data.site.siteMetadata.title} />
-        <PageTransition>{children}</PageTransition>
+        <Transition>{children}</Transition>
         <Footer />
       </>
     )}
