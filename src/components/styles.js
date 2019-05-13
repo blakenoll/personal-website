@@ -3,14 +3,21 @@ import styled, { createGlobalStyle } from 'styled-components'
 export const Globalstyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
   :root {
-    --jet: #303036;
+    --jet: #383C4B;
     --white: #fffaff;
-    --picton-blue: #30bced;
+    --picton-blue: #60B0EF;
     --united-nations-blue: #5b86e5;
     --medium-turquoise: #36d1dc;
+    --yellow: #E6C17A;
+    --p-color: #ABB2BF;
+    --old-blue: #30bced;
+    --old-jet: #303036
   }
   * {
     box-sizing: border-box;
+  }
+  p {
+    color: var(--p-color);
   }
 `
 
@@ -75,13 +82,7 @@ export const Column = styled.div`
 
 export const HeroImage = styled.div`
   min-height: 100vh;
-  background: linear-gradient(
-      45deg,
-      rgba(30, 144, 255, 0.4),
-      rgba(30, 144, 255, 0.1)
-    ),
-    url(https://blakenoll.com/img/michael-olsen-411871-unsplash.jpg) no-repeat
-      top center scroll;
+  background: var(--jet);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -90,7 +91,11 @@ export const HeroImage = styled.div`
 `
 
 export const Button = styled.a`
-  background: linear-gradient(to top left, #5b86e5, #36d1dc);
+  background: linear-gradient(
+    to top left,
+    var(--picton-blue),
+    var(--united-nations-blue)
+  );
   color: ${props => (props.color ? props.color : 'white')};
   font-size: 1rem;
   font-weight: 500;
@@ -107,7 +112,11 @@ export const Button = styled.a`
   }
 
   &:hover {
-    background: linear-gradient(to top left, #5b86e5 50%, #36d1dc);
+    background: linear-gradient(
+      to top left,
+      var(--picton-blue) 50%,
+      var(--united-nations-blue)
+    );
   }
 `
 

@@ -16,9 +16,9 @@ const IndexPage = () => (
           <Column
             flex="1"
             style={{
-              background: 'rgba(0,0,0,.48)',
               padding: '20px',
               borderRadius: '20px',
+              border: '2px solid #0EBA78',
               boxShadow:
                 '0 7px 14px -3px rgba(45,35,66,0.3), 0 2px 4px 0 rgba(45,35,66,0.4), inset -1px -1px 0 0 rgba(0,0,0,0.1)',
             }}

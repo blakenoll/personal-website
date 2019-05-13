@@ -81,15 +81,17 @@ const StyledMobileMenu = styled(MobileMenu)`
     position: fixed;
     overflow-y: auto;
     overflow-x: auto;
-    background: var(--white);
+    background: var(--jet);
     display: none;
     height: auto;
     width: 80vw;
     z-index: -1;
     padding-top: 20px;
     border-radius: 20px;
-    box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
-      0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #cfd1e3;
+    border: 2px solid var(--picton-blue);
+    box-shadow: rgba(45, 35, 66, 0.3) 0px 7px 14px -3px,
+      rgba(45, 35, 66, 0.4) 0px 2px 4px 0px,
+      rgba(0, 0, 0, 0.1) -1px -1px 0px 0px;
     top: 60px;
     right: -100vw;
     transition: right 0.2s ease-out;
@@ -99,10 +101,10 @@ const StyledMobileMenu = styled(MobileMenu)`
       li {
         font-size: 18px;
         font-weight: bold;
-        color: #0c2340;
         margin-bottom: 20px;
         a {
           text-decoration: none;
+          color: var(--picton-blue);
         }
       }
     }

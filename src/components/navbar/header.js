@@ -29,7 +29,7 @@ const StyledNavbar = styled(Navbar)`
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 47px solid var(--white);
+    border-top: 47px solid var(--picton-blue);
     border-right: 47px solid transparent;
     width: 40%;
   }
@@ -45,10 +45,10 @@ const StyledNavbar = styled(Navbar)`
       font-size: 1.5rem;
       margin: 0;
       z-index: 1;
-      color: ;
       a {
         color: var(--jet);
         text-decoration: none;
+        font-weight: 500;
       }
     }
   }
