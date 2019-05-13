@@ -9,6 +9,7 @@ export const Globalstyle = createGlobalStyle`
     --united-nations-blue: #5b86e5;
     --medium-turquoise: #36d1dc;
     --yellow: #E6C17A;
+    --green: #0eba78;
     --p-color: #ABB2BF;
     --old-blue: #30bced;
     --old-jet: #303036
@@ -131,11 +132,19 @@ export const SocialButton = styled.a`
       0 2px 4px 0 rgba(45, 35, 66, 0.4), inset -1px -1px 0 0 #5b86e5;
     padding: 0.5em 0.6em;
     font-size: 1.5rem;
-    background: linear-gradient(to top left, #5b86e5, #36d1dc);
+    background: linear-gradient(
+      to top left,
+      var(--picton-blue),
+      var(--united-nations-blue)
+    );
     color: ${props => (props.color ? props.color : 'white')};
 
     &:hover {
-      background: linear-gradient(to top left, #5b86e5 50%, #36d1dc);
+      background: linear-gradient(
+        to top left,
+        var(--picton-blue) 50%,
+        var(--united-nations-blue)
+      );
     }
   }
 

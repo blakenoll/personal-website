@@ -27,9 +27,10 @@ const StyledCard = styled(Card)`
   width: 250px;
   border-radius: 20px;
   margin: 10px;
-  background: var(--white);
+  background: var(--jet);
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
-    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 #cfd1e3;
+    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 var(--jet);
+  border: 2px solid var(--green);
   transition: transform 0.2s ease-in;
   position: relative;
 
