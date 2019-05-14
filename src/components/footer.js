@@ -23,11 +23,11 @@ const Footer = ({ className }) => (
 )
 
 const StyledFooter = styled(Footer)`
-  background: var(--white);
+  background: var(--jet);
   padding: 3rem 0;
   text-align: center;
   h1 {
-    color: var(--jet);
+    color: var(--green);
   }
 `
 

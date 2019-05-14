@@ -18,9 +18,9 @@ const websites = [
   },
   {
     image: 'https://blakenoll.com/img/portfolio/collegesearch-min.png',
-    title: 'College Search',
-    tech: ['react', 'graphql', 'heroku', 'aws'],
-    link: 'http://college-search-front-end.s3-website-us-west-2.amazonaws.com/',
+    title: 'College Finder',
+    tech: ['react', 'graphql', 'heroku', 'node'],
+    link: 'https://college-finder.netlify.com/',
   },
   {
     image: 'https://blakenoll.com/img/portfolio/wekreative-min.jpeg',

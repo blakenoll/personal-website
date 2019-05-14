@@ -7,7 +7,6 @@ const Card = ({ item, className }) => {
   return (
     <div className={className}>
       <div className="fader">
-        <img src={item.image} alt={item.title} />
         <div className="card-body">
           <h3>{item.title}</h3>
           <p>Tech used:</p>
@@ -35,10 +34,11 @@ const StyledCard = styled(Card)`
   position: relative;
 
   .card-body {
-    padding: 5px 10px;
+    padding: 12px 15px;
     h3 {
       font-size: 17px;
       margin-bottom: 0.5rem;
+      color: var(--yellow);
     }
     p {
       font-size: 14px;

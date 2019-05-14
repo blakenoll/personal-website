@@ -22,8 +22,8 @@ const About = ({ className }) => (
 )
 
 const StyledAbout = styled(About)`
-  color: var(--jet);
-  background: var(--white);
+  color: var(--p-color);
+  background: var(--jet);
   h1 {
     text-align: center;
   }
