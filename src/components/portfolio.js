@@ -71,9 +71,7 @@ const StyledPortfolio = styled(Portfolio)`
   /* background by SVGBackgrounds.com */
   padding: 3rem 0;
   h1 {
-    color: var(--white);
-    font-weight: 200;
-    letter-spacing: 1px;
+    color: var(--red);
     text-align: center;
   }
 `

@@ -10,6 +10,7 @@ export const Globalstyle = createGlobalStyle`
     --medium-turquoise: #36d1dc;
     --yellow: #E6C17A;
     --green: #0eba78;
+    --red: #E06C75
     --p-color: #ABB2BF;
     --old-blue: #30bced;
     --old-jet: #303036
@@ -118,6 +119,10 @@ export const Button = styled.a`
       var(--picton-blue) 50%,
       var(--united-nations-blue)
     );
+  }
+
+  span {
+    margin-left: 8px;
   }
 `
 

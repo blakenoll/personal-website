@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Button } from './styles'
-import resume from '../pdfs/NollBlakeResume.pdf'
+import { Container } from './styles'
+import ResumeButton from './resumeButton'
 
 const About = ({ className }) => (
   <div className={className}>
@@ -14,9 +14,7 @@ const About = ({ className }) => (
         Node, ES6 and above), HTML/CSS, SQL, MongoDB, Rails, Git and course work
         in Java.
       </p>
-      <p className="center">
-        <Button href={resume}>Résumé</Button>
-      </p>
+      <ResumeButton />
     </Container>
   </div>
 )
@@ -26,6 +24,11 @@ const StyledAbout = styled(About)`
   background: var(--jet);
   h1 {
     text-align: center;
+    color: var(--red);
+  }
+  code {
+    color: var(--green);
+    margin-left: 5px;
   }
   .center {
     text-align: center;
