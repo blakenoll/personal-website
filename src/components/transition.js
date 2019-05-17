@@ -6,7 +6,6 @@ const TransitionComp = ({ children }) => {
   const defaultStyle = {
     transition: `filter ${duration}ms ease-out`,
     filter: 'blur(5px)',
-    marginTop: '50px',
   }
 
   const transitionStyles = {
