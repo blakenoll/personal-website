@@ -16,13 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Blake Noll - Software Engineer',
+        short_name: 'blakenoll',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        background_color: '#383c4b',
+        theme_color: '#60B0EF',
+        display: 'standalone',
+        icon: 'src/images/bLogo.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
