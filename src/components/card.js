@@ -38,7 +38,7 @@ const StyledCard = styled(Card)`
     h3 {
       font-size: 17px;
       margin-bottom: 0.5rem;
-      color: var(--yellow);
+      color: var(--picton-blue);
     }
     p {
       font-size: 14px;

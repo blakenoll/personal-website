@@ -53,7 +53,7 @@ const MobileMenu = ({ className }) => {
               )
             } else {
               return (
-                <li key={index + 'z'}>
+                <li key={index + 'z'} onClick={toggleMenu}>
                   <Link to={item.link}>{item.title}</Link>
                 </li>
               )

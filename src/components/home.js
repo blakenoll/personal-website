@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import ResumeButton from './resumeButton'
-import { Container, Row, Column, SocialButton } from '../components/styles'
+import HomeNav from './homeNav'
+import SocialButtons from './socialButtons'
+import { Container, Row, Column } from '../components/styles'
 
 const Home = ({ className }) => (
   <Container className={className}>
@@ -18,19 +20,9 @@ const Home = ({ className }) => (
           developed working in higher education and apply it to something that
           shapes the future.
         </p>
+        <HomeNav />
         <ResumeButton />
-        <SocialButton href="https://github.com/blakenoll" alt="github">
-          <i className="fa fa-github" />
-        </SocialButton>
-        <SocialButton
-          href="https://www.linkedin.com/in/blake-noll"
-          alt="linkedin"
-        >
-          <i className="fa fa-linkedin" />
-        </SocialButton>
-        <SocialButton href="mailto:nollblake@gmail.com" alt="email">
-          <i className="fa fa-envelope-square" />
-        </SocialButton>
+        <SocialButtons />
       </Column>
     </Row>
   </Container>
@@ -46,6 +38,10 @@ const StyledHome = styled(Home)`
   }
   h1 {
     color: var(--picton-blue);
+    small {
+      font-size: 1.4rem;
+      color: var(--p-color);
+    }
   }
 `
 

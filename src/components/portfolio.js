@@ -24,9 +24,9 @@ const websites = [
   },
   {
     image: 'https://blakenoll.com/img/portfolio/wekreative-min.jpeg',
-    title: 'Wekreative',
-    tech: ['jekyll'],
-    link: 'https://wekreative.com/',
+    title: 'Thinking Biblically - blog',
+    tech: ['react', 'gatsby'],
+    link: 'https://thinking-biblically.masters.edu',
   },
   {
     image: 'https://blakenoll.com/img/portfolio/luxsolutions.com_-min.png',
@@ -71,7 +71,7 @@ const StyledPortfolio = styled(Portfolio)`
   /* background by SVGBackgrounds.com */
   padding: 3rem 0;
   h1 {
-    color: var(--red);
+    color: var(--picton-blue);
     text-align: center;
   }
 `

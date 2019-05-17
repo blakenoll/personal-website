@@ -10,8 +10,8 @@ const ResumeButton = ({ className }) => (
       <span>Resume</span>
     </Button>
     <p>
-      For a CLI version: <code>$ npm i -g blakenoll</code> then run{' '}
-      <code>$ blakenoll</code>
+      For a CLI version: <code>$ npm i -g blakenoll</code> <br />
+      then run: <code>$ blakenoll</code>
     </p>
   </div>
 )

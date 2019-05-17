@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
-import About from '../components/about'
+import Contact from '../components/contact'
 
 const ContactPage = () => (
   <Layout>
-    <About />
+    <Contact />
   </Layout>
 )
 

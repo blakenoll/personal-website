@@ -5,20 +5,18 @@ import Image from './image'
 import ResumeButton from './resumeButton'
 
 const About = ({ className }) => (
-  <div className={className}>
-    <Container>
-      <StyledImage />
-      <h1>About</h1>
-      <p>
-        Currently working at The Master's University just north of LA as the Web
-        Content Strategist. In charge of developing and maintaining all web
-        content for the University. I have experience in Javascript (React,
-        Node, ES6 and above), HTML/CSS, SQL, MongoDB, Rails, Git and course work
-        in Java.
-      </p>
-      <ResumeButton />
-    </Container>
-  </div>
+  <Container className={className}>
+    <StyledImage />
+    <h1>About</h1>
+    <p>
+      Currently working at The Master's University just north of LA as the Web
+      Content Strategist. In charge of developing and maintaining all web
+      content for the University. I have experience in Javascript (React, Node,
+      ES6 and above), HTML/CSS, SQL, MongoDB, Rails, Git and course work in
+      Java.
+    </p>
+    <ResumeButton />
+  </Container>
 )
 
 const StyledAbout = styled(About)`
@@ -26,7 +24,7 @@ const StyledAbout = styled(About)`
   background: var(--jet);
   h1 {
     text-align: center;
-    color: var(--red);
+    color: var(--picton-blue);
   }
   code {
     color: var(--green);

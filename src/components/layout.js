@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import Footer from './footer'
 import Navbar from './navbar/header'
 import Transition from './transition'
 import { Globalstyle, HeroImage } from './styles'
@@ -34,9 +33,8 @@ const Layout = ({ children }) => (
         <Globalstyle />
         <Navbar siteTitle={data.site.siteMetadata.title} />
         <HeroImage>
-          <Transition style={{ marginTop: '50px' }}>{children}</Transition>
+          <Transition>{children}</Transition>
         </HeroImage>
-        <Footer />
       </>
     )}
   />
