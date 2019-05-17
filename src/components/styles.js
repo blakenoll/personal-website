@@ -13,11 +13,12 @@ export const Globalstyle = createGlobalStyle`
     --red: #E06C75
     --p-color: #ABB2BF;
     --box-shadow: 0 7px 14px -3px rgba(45,35,66,0.3), 0 2px 4px 0 rgba(45,35,66,0.4), inset -1px -1px 0 0 rgba(0,0,0,0.1);
-    --old-blue: #30bced;
-    --old-jet: #303036
   }
   * {
     box-sizing: border-box;
+  }
+  body {
+     background: var(--jet);
   }
   p {
     color: var(--p-color);
@@ -55,7 +56,7 @@ export const Wrapper = styled.section`
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 1rem 1rem 1rem;
+  padding: 0px 1rem;
   padding-top: 0;
 `
 export const Row = styled.div`

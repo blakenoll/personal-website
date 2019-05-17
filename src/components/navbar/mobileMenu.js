@@ -84,24 +84,29 @@ const StyledMobileMenu = styled(MobileMenu)`
     background: var(--jet);
     display: none;
     height: auto;
-    width: 80vw;
+    width: auto;
     z-index: -1;
-    padding-top: 20px;
-    border-radius: 20px;
+    padding: 1.45rem;
+    border-radius: 20px 0 0 20px;
     border: 2px solid var(--picton-blue);
+    border-right: none;
     box-shadow: rgba(45, 35, 66, 0.3) 0px 7px 14px -3px,
       rgba(45, 35, 66, 0.4) 0px 2px 4px 0px,
       rgba(0, 0, 0, 0.1) -1px -1px 0px 0px;
     top: 60px;
     right: -100vw;
-    transition: right 0.2s ease-out;
+    transition: right 0.25s ease-in;
 
     ul {
       list-style: none;
+      margin: 0;
       li {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
         a {
           text-decoration: none;
           color: var(--picton-blue);
@@ -112,8 +117,8 @@ const StyledMobileMenu = styled(MobileMenu)`
   ${'' /* make menu visible and turn menu icon into an X */}
   &.show {
     .mobile-side-menu {
-      right: 10vw;
-      transition: right 0.25s ease-in;
+      right: 0;
+      transition: right 0.4s ease-out;
     }
     .bar:first-child {
       transform: translateY(6px) rotate(45deg);
