@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
 import Navbar from './navbar/header'
 import Transition from './transition'
-import { Globalstyle } from './styles'
+import { Globalstyle, HeroImage } from './styles'
 import 'font-awesome/css/font-awesome.min.css'
 import './layout.css'
 
@@ -33,7 +33,9 @@ const Layout = ({ children }) => (
         </Helmet>
         <Globalstyle />
         <Navbar siteTitle={data.site.siteMetadata.title} />
-        <Transition style={{ marginTop: '50px' }}>{children}</Transition>
+        <HeroImage>
+          <Transition style={{ marginTop: '50px' }}>{children}</Transition>
+        </HeroImage>
         <Footer />
       </>
     )}

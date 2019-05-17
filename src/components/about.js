@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container } from './styles'
+import Image from './image'
 import ResumeButton from './resumeButton'
 
 const About = ({ className }) => (
   <div className={className}>
     <Container>
+      <StyledImage />
       <h1>About</h1>
       <p>
         Currently working at The Master's University just north of LA as the Web
@@ -30,8 +32,14 @@ const StyledAbout = styled(About)`
     color: var(--green);
     margin-left: 5px;
   }
-  .center {
-    text-align: center;
+`
+const StyledImage = styled(Image)`
+  border-radius: 50%;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: var(--box-shadow);
+  img {
+    border-radius: 50%;
   }
 `
 

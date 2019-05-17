@@ -4,13 +4,13 @@ import { Transition } from 'react-transition-group'
 const TransitionComp = ({ children }) => {
   const duration = 200
   const defaultStyle = {
-    transition: `opacity ${duration}ms ease-out`,
-    opacity: '.8',
+    transition: `filter ${duration}ms ease-out`,
+    filter: 'blur(5px)',
   }
 
   const transitionStyles = {
-    entering: { opacity: '.8' },
-    entered: { opacity: '1' },
+    entering: { filter: 'blur(5px)' },
+    entered: { filter: 'blur(0)' },
   }
   const [inProp, setinProp] = useState(false)
 
