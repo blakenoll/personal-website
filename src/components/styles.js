@@ -85,13 +85,14 @@ export const Column = styled.div`
 `
 
 export const HeroImage = styled.div`
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   background: var(--jet);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: var(--white);
+  margin-top: 50px;
 `
 
 export const Button = styled.a`
