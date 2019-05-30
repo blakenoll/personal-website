@@ -26,9 +26,9 @@ const StyledCard = styled(Card)`
   width: 250px;
   border-radius: 20px;
   margin: 10px;
-  background: var(--jet);
+  background: var(--united-nations-blue);
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
-    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 var(--jet);
+    0 2px 4px 0 rgba(45, 35, 66, 0.4);
   border: 2px solid var(--green);
   transition: transform 0.2s ease-in;
   position: relative;
@@ -38,7 +38,7 @@ const StyledCard = styled(Card)`
     h3 {
       font-size: 17px;
       margin-bottom: 0.5rem;
-      color: var(--picton-blue);
+      color: var(--jet);
     }
     p {
       font-size: 14px;
@@ -50,9 +50,9 @@ const StyledCard = styled(Card)`
     }
   }
 
-  .fader {
-    opacity: 1;
-    transition: opacity 0.2s ease-in;
+  img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
   }
 
   .hover-menu {
@@ -65,9 +65,9 @@ const StyledCard = styled(Card)`
     transition: opacity 0.2s ease-in;
   }
 
-  img {
-    width: 100%;
-    border-radius: 20px 20px 0 0;
+  .fader {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
   }
 
   &:hover {
