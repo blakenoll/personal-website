@@ -67,8 +67,6 @@ class Portfolio extends React.Component {
 }
 
 const StyledPortfolio = styled(Portfolio)`
-  background: var(--jet);
-  /* background by SVGBackgrounds.com */
   padding: 3rem 0;
   h1 {
     color: var(--picton-blue);

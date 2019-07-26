@@ -24,7 +24,7 @@ const About = ({ className }) => (
 const StyledAbout = styled(About)`
   ${Column} {
     color: var(--p-color);
-    background: var(--jet);
+    background: var(--clear-grey);
     border-radius: 20px;
     border: 2px solid var(--green);
     box-shadow: var(--box-shadow);

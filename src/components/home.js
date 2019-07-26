@@ -31,6 +31,7 @@ const Home = ({ className }) => (
 const StyledHome = styled(Home)`
   ${Column} {
     padding: 20px;
+    background: var(--clear-grey);
     border-radius: 20px;
     border: 2px solid var(--green);
     box-shadow: var(--box-shadow);

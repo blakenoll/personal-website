@@ -11,7 +11,7 @@ const Card = ({ item, className }) => {
           <h3>{item.title}</h3>
           <p>Tech used:</p>
           {item.tech.map((t, i) => (
-            <Icon key={i} name={t} />
+            <Icon key={i} name={t} color='#fff' />
           ))}
         </div>
       </div>
@@ -26,7 +26,7 @@ const StyledCard = styled(Card)`
   width: 250px;
   border-radius: 20px;
   margin: 10px;
-  background: var(--united-nations-blue);
+  background: linear-gradient(180deg, rgba(96, 176, 239), rgba(96, 176, 239, .7));
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
     0 2px 4px 0 rgba(45, 35, 66, 0.4);
   border: 2px solid var(--green);
@@ -44,6 +44,7 @@ const StyledCard = styled(Card)`
       font-size: 14px;
       margin-bottom: 5px;
       font-weight: 500;
+      color: var(--jet);
     }
     svg {
       margin: 0 3px;

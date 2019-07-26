@@ -11,7 +11,8 @@ export const Globalstyle = createGlobalStyle`
     --yellow: #E6C17A;
     --green: #0eba78;
     --red: #E06C75
-    --p-color: #ABB2BF;
+    --clear-grey: rgba(56,60,75,.5);
+    --p-color: #fff;
     --box-shadow: 0 7px 14px -3px rgba(45,35,66,0.3), 0 2px 4px 0 rgba(45,35,66,0.4), inset -1px -1px 0 0 rgba(0,0,0,0.1);
   }
   * {
@@ -86,7 +87,7 @@ export const Column = styled.div`
 
 export const HeroImage = styled.div`
   min-height: calc(100vh - 50px);
-  background: var(--jet);
+  background: var(--jet) url(${props => props.image});
   background-size: cover;
   display: flex;
   flex-direction: column;
