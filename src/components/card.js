@@ -26,10 +26,9 @@ const StyledCard = styled(Card)`
   width: 250px;
   border-radius: 20px;
   margin: 10px;
-  background: linear-gradient(180deg, rgba(96, 176, 239), rgba(96, 176, 239, .7));
+  background: var(--clear-grey);
   box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
     0 2px 4px 0 rgba(45, 35, 66, 0.4);
-  border: 2px solid var(--green);
   transition: transform 0.2s ease-in;
   position: relative;
 
@@ -38,13 +37,13 @@ const StyledCard = styled(Card)`
     h3 {
       font-size: 17px;
       margin-bottom: 0.5rem;
-      color: var(--jet);
+      color: var(--picton-blue);
     }
     p {
       font-size: 14px;
       margin-bottom: 5px;
       font-weight: 500;
-      color: var(--jet);
+      color: var(--white);
     }
     svg {
       margin: 0 3px;

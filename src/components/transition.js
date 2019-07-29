@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
 
 const TransitionComp = ({ children }) => {
-  const duration = 400
+  const duration = 300
   const defaultStyle = {
     transition: `all ${duration}ms ease-out`,
-    filter: 'blur(10px)',
+    filter: 'blur(8px)',
     opacity: '.1',
   }
 
   const transitionStyles = {
-    entering: { filter: 'blur(0px)', opacity: '1' },
+    entering: { filter: 'blur(5px)', opacity: '1' },
     entered: { filter: 'blur(0px)', opacity: '1' },
   }
   const [inProp, setinProp] = useState(false)

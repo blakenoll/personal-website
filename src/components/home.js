@@ -33,7 +33,6 @@ const StyledHome = styled(Home)`
     padding: 20px;
     background: var(--clear-grey);
     border-radius: 20px;
-    border: 2px solid var(--green);
     box-shadow: var(--box-shadow);
   }
   h1 {

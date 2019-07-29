@@ -81,7 +81,7 @@ const StyledMobileMenu = styled(MobileMenu)`
     position: fixed;
     overflow-y: auto;
     overflow-x: auto;
-    background: var(--jet);
+    background: var(--clear-grey);
     display: none;
     height: auto;
     width: auto;
@@ -118,7 +118,7 @@ const StyledMobileMenu = styled(MobileMenu)`
   &.show {
     .mobile-side-menu {
       right: 0;
-      transition: right 0.4s ease-out;
+      transition: right 0.3s ease-out;
     }
     .bar:first-child {
       transform: translateY(6px) rotate(45deg);

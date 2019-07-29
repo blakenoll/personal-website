@@ -17,7 +17,6 @@ const StyledContact = styled(Contact)`
     text-align: center;
     background: var(--clear-grey);
     border-radius: 20px;
-    border: 2px solid var(--green);
     box-shadow: var(--box-shadow);
     padding: 1rem 0;
   }

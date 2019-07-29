@@ -26,9 +26,8 @@ const StyledAbout = styled(About)`
     color: var(--p-color);
     background: var(--clear-grey);
     border-radius: 20px;
-    border: 2px solid var(--green);
     box-shadow: var(--box-shadow);
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   h1 {
