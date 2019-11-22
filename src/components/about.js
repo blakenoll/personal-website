@@ -23,19 +23,18 @@ const About = ({ className }) => (
 
 const StyledAbout = styled(About)`
   ${Column} {
-    color: var(--p-color);
-    background: var(--clear-grey);
+    color: var(--med-emph);
+    background: var(--dp-1);
     border-radius: 20px;
-    box-shadow: var(--box-shadow);
     padding: 1rem;
   }
 
   h1 {
     text-align: center;
-    color: var(--picton-blue);
+    color: var(--hi-emph);
   }
   code {
-    color: var(--green);
+    color: var(--primary);
     margin-left: 5px;
   }
 `
@@ -43,7 +42,6 @@ const StyledImage = styled(Image)`
   border-radius: 50%;
   max-width: 300px;
   margin: 20px auto;
-  box-shadow: var(--box-shadow);
   img {
     border-radius: 50%;
   }

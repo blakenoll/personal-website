@@ -17,23 +17,11 @@ const Navbar = ({ siteTitle, className }) => (
 )
 
 const StyledNavbar = styled(Navbar)`
-  background: var(--jet);
-  box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
-    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: var(--dp-2);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 200;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 47px solid var(--picton-blue);
-    border-right: 47px solid transparent;
-    width: 40%;
-  }
 
   .flex-row {
     display: flex;
@@ -47,7 +35,7 @@ const StyledNavbar = styled(Navbar)`
       margin: 0;
       z-index: 1;
       a {
-        color: var(--jet);
+        color: var(--hi-emph);
         text-decoration: none;
         font-weight: 500;
       }

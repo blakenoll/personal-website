@@ -31,15 +31,14 @@ const Home = ({ className }) => (
 const StyledHome = styled(Home)`
   ${Column} {
     padding: 20px;
-    background: var(--clear-grey);
+    background: var(--dp-1);
     border-radius: 20px;
-    box-shadow: var(--box-shadow);
   }
   h1 {
-    color: var(--picton-blue);
+    color: var(--hi-emph);
     small {
       font-size: 1.4rem;
-      color: var(--p-color);
+      color: var(--lo-emph);
     }
   }
 `

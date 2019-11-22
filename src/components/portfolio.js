@@ -69,7 +69,7 @@ class Portfolio extends React.Component {
 const StyledPortfolio = styled(Portfolio)`
   padding: 3rem 0;
   h1 {
-    color: var(--picton-blue);
+    color: var(--hi-emph);
     text-align: center;
   }
 `

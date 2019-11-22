@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Button } from './styles'
-import resume from '../pdfs/NollBlakeResume.pdf'
+import React from "react";
+import styled from "styled-components";
+import { Button } from "./styles";
+import resume from "../pdfs/NollBlakeResume.pdf";
 
 const ResumeButton = ({ className }) => (
   <div className={className}>
@@ -10,19 +10,31 @@ const ResumeButton = ({ className }) => (
       <span>Resume</span>
     </Button>
     <p>
-      For a CLI version: <code>$ npm i -g blakenoll</code> <br />
-      then run: <code>$ blakenoll</code>
+      <h2>For a CLI version: </h2>
+      <pre>
+        <span className="prompt">$</span> <span>npm</span> i -g blakenoll <br />
+        <i># then run</i> <br />
+        <span className="prompt">$</span> <span>blakenoll</span>
+      </pre>
     </p>
   </div>
-)
+);
 
 const StyledResumeButton = styled(ResumeButton)`
   ${Button} {
     margin: 0px 0px 1.45rem 0px;
     display: inline-block;
   }
-  code {
-    color: var(--green);
+  pre {
+    color: var(--med-emph);
+    background: var(--dp-3);
+    border-radius: 20px;
+    span {
+      color: var(--primary);
+    }
+    .prompt {
+      color: var(--secondary);
+    }
   }
-`
-export default StyledResumeButton
+`;
+export default StyledResumeButton;

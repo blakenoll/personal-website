@@ -24,11 +24,9 @@ const listItems = [
 
 const MobileMenu = ({ className }) => {
   const [visible, setVisible] = useState(false)
-  console.log(visible)
 
   function toggleMenu() {
     setVisible(!visible)
-    console.log(visible)
   }
 
   useEffect(() => {}, [])
@@ -72,7 +70,7 @@ const StyledMobileMenu = styled(MobileMenu)`
   .bar {
     width: 20px;
     height: 3px;
-    background: var(--picton-blue);
+    background: var(--hi-emph);
     margin: 3px 0;
     transition: all 0.3s;
   }
@@ -81,18 +79,13 @@ const StyledMobileMenu = styled(MobileMenu)`
     position: fixed;
     overflow-y: auto;
     overflow-x: auto;
-    background: var(--clear-grey);
+    background: var(--dp-2);
     display: none;
     height: auto;
     width: auto;
     z-index: -1;
     padding: 1.45rem;
     border-radius: 20px 0 0 20px;
-    border: 2px solid var(--picton-blue);
-    border-right: none;
-    box-shadow: rgba(45, 35, 66, 0.3) 0px 7px 14px -3px,
-      rgba(45, 35, 66, 0.4) 0px 2px 4px 0px,
-      rgba(0, 0, 0, 0.1) -1px -1px 0px 0px;
     top: 60px;
     right: -100vw;
     transition: right 0.25s ease-in;
@@ -109,7 +102,7 @@ const StyledMobileMenu = styled(MobileMenu)`
         }
         a {
           text-decoration: none;
-          color: var(--picton-blue);
+          color: var(--hi-emph);
         }
       }
     }

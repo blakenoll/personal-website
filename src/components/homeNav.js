@@ -36,7 +36,7 @@ const StyledHomeNav = styled(HomeNav)`
         margin-left: 15px;
       }
       a {
-        color: var(--picton-blue);
+        color: var(--hi-emph);
         text-decoration: none;
         transition: color 0.2s linear;
         &:hover {

@@ -15,14 +15,13 @@ const Contact = ({ className }) => (
 const StyledContact = styled(Contact)`
   ${Column} {
     text-align: center;
-    background: var(--clear-grey);
+    background: var(--dp-1);
     border-radius: 20px;
-    box-shadow: var(--box-shadow);
     padding: 1rem 0;
   }
 
   h1 {
-    color: var(--picton-blue);
+    color: var(--hi-emph);
   }
 `
 

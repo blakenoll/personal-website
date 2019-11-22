@@ -1,30 +1,31 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import space from "../images/space.jpg"
 
 export const Globalstyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
   :root {
-    --jet: #383C4B;
-    --white: #fffaff;
-    --picton-blue: #60B0EF;
-    --united-nations-blue: #5b86e5;
-    --medium-turquoise: #36d1dc;
-    --yellow: #E6C17A;
-    --green: #0eba78;
-    --red: #E06C75
-    --clear-grey: rgba(50,60,75,.85);
-    --p-color: #fff;
-    --box-shadow: 0 7px 14px -3px rgba(45,35,66,0.3), 0 2px 4px 0 rgba(45,35,66,0.4), inset -1px -1px 0 0 rgba(0,0,0,0.1);
+    --bg: #121212;
+    --primary: #8dc9fa;
+    --primary-hover: #91cbfa;
+    --secondary: #ffc97d;
+    --secondary-hover: #fecb82;
+    --white: #ffffff;
+    --hi-emph: rgba(255,255,255,0.87);
+    --med-emph: rgba(255,255,255,0.60);
+    --lo-emph: rgba(255,255,255,0.38);
+    --dp-1: #1d1d1d;
+    --dp-2: #222222;
+    --dp-3: #252525;
+    --dp-4: #272727;
+    --dp-6: #2c2c2c;
   }
   * {
     box-sizing: border-box;
   }
   body {
-     background: url(${space});
-     background-size: cover;
+     background: var(--bg);
   }
   p {
-    color: var(--p-color);
+    color: var(--med-emph);
   }
 `
 
@@ -89,8 +90,8 @@ export const Column = styled.div`
 
 export const HeroImage = styled.div`
   min-height: calc(100vh - 50px);
-  ${'' /* background: var(--jet) url(${props => props.image});
-  background-size: cover; */}
+  background: url(${props => props.image});
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,32 +100,22 @@ export const HeroImage = styled.div`
 `
 
 export const Button = styled.a`
-  background: linear-gradient(
-    to top left,
-    var(--picton-blue),
-    var(--united-nations-blue)
-  );
-  color: ${props => (props.color ? props.color : 'white')};
+  background: var(--secondary);
+  color: var(--bg);
   font-size: 1rem;
   font-weight: 500;
   margin: 20px 0px 20px 20px;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 50px;
-  box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
-    0 2px 4px 0 rgba(45, 35, 66, 0.4), inset -1px -1px 0 0 #5b86e5;
-  transition: background 0.5s;
+  transition: background, box-shadow 0.2s;
 
   &:first-child {
     margin: 20px 0;
   }
 
   &:hover {
-    background: linear-gradient(
-      to top left,
-      var(--picton-blue) 50%,
-      var(--united-nations-blue)
-    );
+    background: var(--secondary-hover);
   }
 
   span {
@@ -134,28 +125,18 @@ export const Button = styled.a`
 
 export const SocialButton = styled.a`
   margin: 20px 20px 20px 0px;
-  transition: background 0.5s;
+  
 
   i {
     display: inline-block;
     border-radius: 60px;
-    box-shadow: 0 7px 14px -3px rgba(45, 35, 66, 0.3),
-      0 2px 4px 0 rgba(45, 35, 66, 0.4), inset -1px -1px 0 0 #5b86e5;
     padding: 0.5em 0.6em;
     font-size: 1.5rem;
-    background: linear-gradient(
-      to top left,
-      var(--picton-blue),
-      var(--united-nations-blue)
-    );
-    color: ${props => (props.color ? props.color : 'white')};
+    color: var(--primary);
+    transition: background, box-shadow .2s;
 
     &:hover {
-      background: linear-gradient(
-        to top left,
-        var(--picton-blue) 50%,
-        var(--united-nations-blue)
-      );
+      background: var(--dp-2);
     }
   }
 

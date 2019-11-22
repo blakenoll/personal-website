@@ -36,11 +36,11 @@ const StyledNavLinks = styled(NavLinks)`
         margin-left: 15px;
       }
       a {
-        color: var(--picton-blue);
+        color: var(--med-emph);
         text-decoration: none;
         transition: color 0.2s linear;
         &:hover {
-          color: var(--white);
+          color: var(--hi-emph);
         }
       }
     }
