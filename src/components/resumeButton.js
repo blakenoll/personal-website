@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./styles";
-import resume from "../pdfs/NollBlakeResume.pdf";
+import resume from "../pdfs/blakeNollResume.pdf";
 
 const ResumeButton = ({ className }) => (
   <div className={className}>
-    <Button href={resume} className={className}>
+    <Button href={resume} className={className} target="_blank">
       <i className="fa fa-download" />
       <span>Resume</span>
     </Button>
@@ -26,9 +26,12 @@ const StyledResumeButton = styled(ResumeButton)`
     display: inline-block;
   }
   pre {
-    color: var(--med-emph);
+    color: var(--primary);
     background: var(--dp-3);
     border-radius: 20px;
+    i {
+      color: var(--med-emph);
+    }
     span {
       color: var(--primary);
     }
