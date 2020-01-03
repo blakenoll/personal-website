@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import MobileMenu from './mobileMenu'
-import NavLinks from './navLinks'
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import MobileMenu from "./mobileMenu";
+import NavLinks from "./navLinks";
 
 const Navbar = ({ siteTitle, className }) => (
   <div className={className}>
@@ -14,7 +14,7 @@ const Navbar = ({ siteTitle, className }) => (
       <MobileMenu />
     </div>
   </div>
-)
+);
 
 const StyledNavbar = styled(Navbar)`
   background: var(--dp-2);
@@ -47,6 +47,6 @@ const StyledNavbar = styled(Navbar)`
       width: 60%;
     }
   }
-`
+`;
 
-export default StyledNavbar
+export default StyledNavbar;

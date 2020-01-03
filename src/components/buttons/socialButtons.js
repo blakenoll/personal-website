@@ -1,5 +1,5 @@
-import React from 'react'
-import { SocialButton } from './styles'
+import React from "react";
+import { SocialButton } from "../styledComponents";
 
 const SocialButtons = () => (
   <>
@@ -16,6 +16,6 @@ const SocialButtons = () => (
       <i className="fa fa-envelope-square" />
     </SocialButton>
   </>
-)
+);
 
-export default SocialButtons
+export default SocialButtons;

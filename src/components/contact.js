@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Column } from './styles'
-import SocialButtons from './socialButtons'
+import React from "react";
+import styled from "styled-components";
+import { Container, Column } from "./styledComponents";
+import SocialButtons from "./buttons/socialButtons";
 
 const Contact = ({ className }) => (
   <Container className={className}>
@@ -10,7 +10,7 @@ const Contact = ({ className }) => (
       <SocialButtons />
     </Column>
   </Container>
-)
+);
 
 const StyledContact = styled(Contact)`
   ${Column} {
@@ -23,6 +23,6 @@ const StyledContact = styled(Contact)`
   h1 {
     color: var(--hi-emph);
   }
-`
+`;
 
-export default StyledContact
+export default StyledContact;

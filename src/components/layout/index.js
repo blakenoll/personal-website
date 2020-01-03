@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import Navbar from './navbar/header'
-import Transition from './transition'
-import { Globalstyle, HeroImage } from './styles'
-import 'font-awesome/css/font-awesome.min.css'
-import './layout.css'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
+import Navbar from "../navbar";
+import Transition from "../transition";
+import { Globalstyle, HeroImage } from "../styledComponents";
+import "font-awesome/css/font-awesome.min.css";
+import "./layout.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,8 +24,8 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: "description", content: "Sample" },
+            { name: "keywords", content: "sample, something" }
           ]}
         >
           <html lang="en" />
@@ -38,10 +38,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

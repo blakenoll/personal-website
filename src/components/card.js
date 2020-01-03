@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Button } from './styles'
-import Icon from './icons'
+import React from "react";
+import styled from "styled-components";
+import { Button } from "./styledComponents";
+import Icon from "./icons";
 
 const Card = ({ item, className }) => {
   return (
@@ -11,7 +11,7 @@ const Card = ({ item, className }) => {
           <h3>{item.title}</h3>
           <p>Tech used:</p>
           {item.tech.map((t, i) => (
-            <Icon key={i} name={t} color='#a5a5a5' />
+            <Icon key={i} name={t} color="#a5a5a5" />
           ))}
         </div>
       </div>
@@ -19,8 +19,8 @@ const Card = ({ item, className }) => {
         <Button href={item.link}>View</Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const StyledCard = styled(Card)`
   width: 250px;
@@ -84,5 +84,5 @@ const StyledCard = styled(Card)`
   @media screen and (max-width: 768px) {
     width: 300px;
   }
-`
-export default StyledCard
+`;
+export default StyledCard;

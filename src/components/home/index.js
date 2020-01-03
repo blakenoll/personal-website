@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import ResumeButton from './resumeButton'
-import HomeNav from './homeNav'
-import SocialButtons from './socialButtons'
-import { Container, Row, Column } from '../components/styles'
+import React from "react";
+import styled from "styled-components";
+import ResumeButton from "../buttons/resumeButton";
+import HomeNav from "./homeNav";
+import SocialButtons from "../buttons/socialButtons";
+import { Container, Row, Column } from "../styledComponents";
 
 const Home = ({ className }) => (
   <Container className={className}>
@@ -26,7 +26,7 @@ const Home = ({ className }) => (
       </Column>
     </Row>
   </Container>
-)
+);
 
 const StyledHome = styled(Home)`
   ${Column} {
@@ -41,6 +41,6 @@ const StyledHome = styled(Home)`
       color: var(--lo-emph);
     }
   }
-`
+`;
 
-export default StyledHome
+export default StyledHome;

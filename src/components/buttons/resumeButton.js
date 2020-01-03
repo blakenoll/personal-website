@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "./styles";
-import resume from "../pdfs/blakeNollResume.pdf";
+import { Button } from "../styledComponents";
+import resume from "../../pdfs/blakeNollResume.pdf";
 
 const ResumeButton = ({ className }) => (
   <div className={className}>

@@ -1,38 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import styled from 'styled-components'
-import StyledMobileDropdown from './mobileDropdown'
-import { Link } from 'gatsby'
+import React, { useState } from "react";
+import styled from "styled-components";
+import StyledMobileDropdown from "./mobileDropdown";
+import { Link } from "gatsby";
 
 const listItems = [
   {
-    title: 'Home',
-    link: '/',
+    title: "Home",
+    link: "/"
   },
   {
-    title: 'About',
-    link: '/about',
+    title: "About",
+    link: "/about"
   },
   {
-    title: 'Portfolio',
-    link: '/portfolio',
+    title: "Portfolio",
+    link: "/portfolio"
   },
   {
-    title: 'Contact',
-    link: '/contact',
-  },
-]
+    title: "Contact",
+    link: "/contact"
+  }
+];
 
 const MobileMenu = ({ className }) => {
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
 
   function toggleMenu() {
-    setVisible(!visible)
+    setVisible(!visible);
   }
 
-  useEffect(() => {}, [])
-
   return (
-    <div className={`${className} ${visible ? 'show' : ''}`}>
+    <div className={`${className} ${visible ? "show" : ""}`}>
       <div className="menu" onClick={toggleMenu}>
         <div className="bar" />
         <div className="bar" />
@@ -46,22 +44,22 @@ const MobileMenu = ({ className }) => {
                 <StyledMobileDropdown
                   title={item.title}
                   items={item.dropdown}
-                  key={index + 'd'}
+                  key={index + "d"}
                 />
-              )
+              );
             } else {
               return (
-                <li key={index + 'z'} onClick={toggleMenu}>
+                <li key={index + "z"} onClick={toggleMenu}>
                   <Link to={item.link}>{item.title}</Link>
                 </li>
-              )
+              );
             }
           })}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const StyledMobileMenu = styled(MobileMenu)`
   display: none;
@@ -107,7 +105,7 @@ const StyledMobileMenu = styled(MobileMenu)`
       }
     }
   }
-  ${'' /* make menu visible and turn menu icon into an X */}
+  ${"" /* make menu visible and turn menu icon into an X */}
   &.show {
     .mobile-side-menu {
       right: 0;
@@ -125,11 +123,12 @@ const StyledMobileMenu = styled(MobileMenu)`
   }
 
   @media screen and (max-width: 992px) {
-    display: block;
+    display: flex;
+    align-items: center;
     .mobile-side-menu {
       display: block;
     }
   }
-`
+`;
 
-export default StyledMobileMenu
+export default StyledMobileMenu;

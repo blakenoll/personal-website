@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Column } from './styles'
-import Image from './image'
-import ResumeButton from './resumeButton'
+import React from "react";
+import styled from "styled-components";
+import { Container, Column } from "./styledComponents";
+import Image from "./image";
+import ResumeButton from "./buttons/resumeButton";
 
 const About = ({ className }) => (
   <Container className={className}>
@@ -19,7 +19,7 @@ const About = ({ className }) => (
       <ResumeButton />
     </Column>
   </Container>
-)
+);
 
 const StyledAbout = styled(About)`
   ${Column} {
@@ -37,7 +37,7 @@ const StyledAbout = styled(About)`
     color: var(--primary);
     margin-left: 5px;
   }
-`
+`;
 const StyledImage = styled(Image)`
   border-radius: 50%;
   max-width: 300px;
@@ -45,6 +45,6 @@ const StyledImage = styled(Image)`
   img {
     border-radius: 50%;
   }
-`
+`;
 
-export default StyledAbout
+export default StyledAbout;

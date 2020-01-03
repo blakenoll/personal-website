@@ -9,9 +9,9 @@ export const Globalstyle = createGlobalStyle`
     --secondary: #ffc97d;
     --secondary-hover: #fecb82;
     --white: #ffffff;
-    --hi-emph: rgba(255,255,255,0.87);
-    --med-emph: rgba(255,255,255,0.60);
-    --lo-emph: rgba(255,255,255,0.38);
+    --hi-emph: #e0e0e0;
+    --med-emph: #a0a0a0;
+    --lo-emph: #6b6b6b;
     --dp-1: #1d1d1d;
     --dp-2: #222222;
     --dp-3: #252525;
