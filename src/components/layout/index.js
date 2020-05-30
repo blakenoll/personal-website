@@ -29,6 +29,10 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <link
+            rel="stylesheet"
+            url="https://fonts.googleapis.com/css?family=Karla|Lato"
+          />
         </Helmet>
         <Globalstyle />
         <Navbar siteTitle={data.site.siteMetadata.title} />

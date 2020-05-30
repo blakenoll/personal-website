@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const Globalstyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
   :root {
     --bg: #121212;
     --primary: #8dc9fa;
@@ -65,32 +64,32 @@ export const Container = styled.div`
 `;
 export const Row = styled.div`
   display: flex;
-  flex: ${props => (props.flex ? props.flex : "initial")};
+  flex: ${(props) => (props.flex ? props.flex : "initial")};
   flex-direction: row;
-  flex-wrap: ${props => (props.wrap ? props.wrap : "initial")};
-  align-content: ${props =>
+  flex-wrap: ${(props) => (props.wrap ? props.wrap : "initial")};
+  align-content: ${(props) =>
     props.alignContent ? props.alignContent : "initial"};
-  justify-content: ${props =>
+  justify-content: ${(props) =>
     props.justifyContent ? props.justifyContent : "initial"};
 
   @media screen and (max-width: 768px) {
-    flex-direction: ${props => (props.mobile ? "column-reverse" : "row")};
+    flex-direction: ${(props) => (props.mobile ? "column-reverse" : "row")};
   }
 `;
 export const Column = styled.div`
-  flex: ${props => (props.flex ? props.flex : "initial")};
+  flex: ${(props) => (props.flex ? props.flex : "initial")};
   flex-direction: column;
-  align-content: ${props =>
+  align-content: ${(props) =>
     props.alignContent ? props.alignContent : "initial"};
-  justify-content: ${props =>
+  justify-content: ${(props) =>
     props.justifyContent ? props.justifyContent : "initial"};
-  margin: ${props => (props.margin ? props.margin : "0")};
-  width: ${props => (props.width ? props.width : "auto")};
+  margin: ${(props) => (props.margin ? props.margin : "0")};
+  width: ${(props) => (props.width ? props.width : "auto")};
 `;
 
 export const HeroImage = styled.div`
   min-height: calc(100vh - 50px);
-  background: url(${props => props.image});
+  background: url(${(props) => props.image});
   background-size: cover;
   display: flex;
   flex-direction: column;
