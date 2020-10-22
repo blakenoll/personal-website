@@ -5,7 +5,7 @@
   "author": "Blake Noll <nollblake@gmail.com>",
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gatsby": "^2.24.57",
+    "gatsby": "^2.24.85",
     "gatsby-image": "^2.4.13",
     "gatsby-plugin-manifest": "^2.4.18",
     "gatsby-plugin-offline": "^3.2.3",
